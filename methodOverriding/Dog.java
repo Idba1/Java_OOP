@@ -11,7 +11,9 @@ public class Dog extends Animal {
     }
 
     public void eat() { //This is method overriding. Same method as like in parent class
+        super.eat(); //access parent class method
         System.out.println(name + " is eating meat");
+        super.eat(); //access parent class method
     }
 
     public void eat(int quantity) { // This is NOT method overriding. CZ it take a variable
